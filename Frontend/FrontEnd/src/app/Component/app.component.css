@@ -1,0 +1,137 @@
+/*--------------------- MARGENES --------------------*/
+
+  .title{
+      color: black;
+      font-weight: bold;
+      font-size: x-large;
+  }
+
+  .content{
+    margin: 15vh 10px 0 10px;
+    background-color: white;
+  }
+
+  .search-div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .filter-form-field{
+    width: 100%;
+  }
+
+  .material-icons.color_green {
+    color: rgba(0, 138, 0, 0.986);
+  }
+
+  p{
+    display: block;
+    width: auto;
+    height: auto;
+    word-break: break-all;
+    word-wrap: break-word;
+  }
+
+  .row{
+    margin: 0%
+  }
+  .row > *{
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  .mobile-label {
+    display: none;
+  }
+
+  .mat-header-cell{
+    color: #140E39;
+    font-weight: bold;
+    font-size: 1em;
+  }
+  /* .mat-cell{
+    padding: 5px;
+  } */
+  #tabs .mat-tab-label{
+    background-color: #140E39;
+    color: white;
+    border-bottom: 10px;
+  }
+  /*-------------------- /MARGENES --------------------*/
+  /*--------------------- BOTONES --------------------*/
+
+  .btn-create{
+    color: white;
+    text-align: center;
+    margin: 5%;
+  }
+
+  .btn-dialog-close{
+    width: 45px;
+    min-width: 0px !important;
+    height: 40px;
+    padding: 0px !important;
+  }
+
+  /*-------------------- /BOTONES --------------------*/
+  /*--------------------- TABLA --------------------*/
+
+  @media screen and (max-width: 960px) {
+
+    .mat-table {
+      border: 0;
+      vertical-align: middle
+    }
+    .mat-table caption {
+      font-size: 1em;
+    }
+    .mat-table .mat-header-cell {
+      border: 10px solid;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    .mat-table .mat-row {
+      border-bottom: 5px solid #ddd;
+      display: block;
+    }
+    .mat-table .mat-cell {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: 1em;
+      text-align: right;
+      font-weight: normal;
+      height:30px;
+      margin-bottom: 4%;
+    }
+    .mat-table .mat-cell:before {
+      content: attr(data-label);
+      float: left;
+      font-size: 1em;
+      color: #140E39;
+      font-weight: bold;
+    }
+    .mat-table .mat-cell:last-child {
+      border-bottom: 0;
+    }
+    .mat-table .mat-cell:first-child {
+      margin-top: 4%;
+    }
+    .mat-cell:first-of-type{
+      padding-left: 0px;
+    }
+  }
+
+  /*-------------------- /TABLA --------------------*/
+
+  .search-input{
+      width: 100%;
+  }
+
+  .fill-space {
+      flex: 1 1 auto;
+  }

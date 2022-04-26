@@ -1,0 +1,64 @@
+<div class="card shadow">
+
+  <nav class="navbar justify-content-xl-center">
+
+    <a class = navbar-brand>
+      <input type="search"  placeholder="Name" name= "name" >
+      <button matSuffix mat-button><mat-icon >search</mat-icon></button>
+    </a>
+
+     <a class = navbar-brand>
+      <input type="search"  placeholder="ID" name= "id" >
+      <button matSuffix mat-button><mat-icon >search</mat-icon></button>
+    </a>
+
+  </nav>
+
+  <div class="btn">
+    <button type="button" class="btn btn-outline-primary" (click)="onCreate()">Add Employee</button>
+  </div>
+
+  <div style="text-align:center">
+    <div class="table-responsive">
+      <table class="table align-items-center table-flush" >
+        <thead class="thead-light"><tr>
+          <th scope="col">Photo</th>
+          <th scope="col">Name</th>
+          <th scope="col">ID</th>
+          <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let employe of employList">
+            <th scope="row">
+              <div class="media align-items-center">
+                <div class="media-body">
+                  {{employe.photo}}
+                </div>
+              </div>
+            </th>
+
+            <td>
+              {{employe.name}}
+            </td>
+
+            <td>
+              {{employe.id}}
+            </td>
+
+            <!--Colum Edit and Delete-->
+            <td class="text-right">
+              <div placement="bottom-right">
+                <button matTooltip="Edit" mat-icon-button color="primary" ><mat-icon>edit</mat-icon></button>
+                <button matTooltip="Delete" mat-icon-button color="warn" ><mat-icon>delete_outline</mat-icon></button>
+                <button matTooltip="See" mat-icon-button color="accent" ><mat-icon> visibility</mat-icon></button>
+              </div>
+            </td>
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>

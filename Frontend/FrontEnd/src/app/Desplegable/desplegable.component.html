@@ -1,0 +1,38 @@
+<mat-toolbar class="bg-gradient-green">
+    <span class="fill-remaning-space"></span>
+    <button style="background-color: red;" class="btn-dialog-close" mat-stroked-button (click)="onClose()" tabindex="-1"><mat-icon>clear</mat-icon></button>
+</mat-toolbar>
+<form [formGroup]="formEmployee" class="normal-form" >
+    <div class=" col-sm-6 " style="overflow: hidden;">
+        <div class="controles-container">
+            <!-- Select type of product -->
+            <mat-form-field>
+              <input formControlName="id"  placeholder="ID">
+            </mat-form-field>
+            <mat-form-field>
+              <input formControlName="name"  placeholder="Name">
+            </mat-form-field>
+            <mat-form-field>
+              <input formControlName="image"  placeholder="Image">
+            </mat-form-field>
+            <mat-form-field>
+              <input formControlName="number"  placeholder="Number">
+            </mat-form-field>
+            <mat-form-field>
+                <input formControlName="email"  placeholder="Email">
+            </mat-form-field>
+            <mat-form-field>
+                <input formControlName="date"  placeholder="Date">
+            </mat-form-field>
+            <mat-form-field>
+                  <input formControlName="idGere"  placeholder="IDGere">
+              </mat-form-field>
+          </div>
+
+          <div class=" col-sm-6 ">
+            <div style="width: 100%; display: flow-root;">
+                <button class="guardar bg-gradient-green" mat-raised-button (click)="onSubmit()" >Save</button>
+            </div>
+          </div>
+    </div>
+</form>
